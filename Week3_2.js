@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const server = http.createServer((request, response) => {
     console.log("Request received:", request.url);
-    const filePath = path.join(__dirname, request.url === '/' ? 'index.html' : request.url);
+    const filePath = path.join(__dirname, request.url === '/' ? 'Week3_2.html' : request.url);
     const extName = String(path.extname(filePath)).toLowerCase();
 
     const mimeTypes = {
