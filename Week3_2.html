@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3f9cbb;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 1.5rem;
+}
+
+.gallery {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.gallery img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    border-color: #3d94b4;
+}
+
+footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+    </style>
+    <header>
+        <h1>Welcome to My Static Server!</h1>
+    </header>
+    <main>
+        <p>This is a simple static file server built using Node.js. Below are some images for you to enjoy!</p>
+        <div class="gallery">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/044/518/137/small_2x/ai-generated-tiger-on-the-background-of-a-winter-landscape-generative-ai-photo.jpg" alt="Picture 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCq0ehg2dp_owxaQCUK4I_pi8-l6eIfs3zDA&s" alt="Picture 2">
+            <img src="https://pixelz.cc/wp-content/uploads/2019/12/reindeer-mountain-fog-uhd-4k-wallpaper-548x308.jpg" alt="Picture 3">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Static Server</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
